@@ -1,0 +1,32 @@
+@import "../Helpers/variable";
+@import "../Helpers/mixin";
+@import "../Components/buttons";
+
+.carousel {
+  height: $carousel-height;
+
+  .carousel__content {
+    height: 100%;
+    background-color: $bg-carousel;
+
+    .carousel__main {
+      height: 100%;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: flex-start;
+
+      .carousel__title {
+        @include styleText($fs-5xl, $fw-light, $c0-text);
+        text-transform: capitalize;
+      }
+
+      .carousel__des {
+        @include styleText($fs-regular, $fw-normal, $c1-text);
+      }
+
+      .carousel__button {
+        @extend .button;
+      }
+    }
+  }
+}

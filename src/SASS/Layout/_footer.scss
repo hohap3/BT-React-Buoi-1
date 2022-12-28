@@ -1,0 +1,18 @@
+@import "../Helpers/variable";
+@import "../Helpers/mixin";
+
+.footer {
+  padding: 2rem 0;
+  background-color: $bg-black;
+
+  .footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      @include styleText($fs-regular, $fw-normal, $c0-white);
+      margin: 0;
+    }
+  }
+}

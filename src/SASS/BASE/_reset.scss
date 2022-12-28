@@ -1,0 +1,27 @@
+@import "../Helpers/variable";
+
+// Setting for all
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: inherit;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Setting for html
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  color: $c0-text;
+}

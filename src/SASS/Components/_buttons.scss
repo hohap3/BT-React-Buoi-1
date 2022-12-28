@@ -1,0 +1,11 @@
+@import "../Helpers/variable";
+@import "../Helpers/mixin";
+
+.button {
+  padding: 0.6rem 2rem;
+  @include styleText($fs-regular, $fw-medium, $c0-white);
+  background-color: $bg-blue;
+  border-radius: 0.6rem;
+  border: none;
+  cursor: pointer;
+}

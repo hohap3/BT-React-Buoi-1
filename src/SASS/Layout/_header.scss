@@ -1,0 +1,41 @@
+@import "../Helpers/variable";
+@import "../Helpers/mixin";
+
+.header {
+  height: $header-height;
+  background-color: $bg-black;
+  .header__content {
+    height: 100%;
+
+    .header__main {
+      height: 100%;
+
+      .header__logo {
+        a {
+          display: inline-block;
+          @include styleText($fs-2xl, $fw-medium, $c0-white);
+        }
+      }
+
+      .header__nav {
+        gap: 2rem;
+        a {
+          display: inline-block;
+          @include styleText(
+            $fs-regular,
+            $fw-normal,
+            rgba($color: $c0-white, $alpha: 0.6)
+          );
+
+          &.active {
+            color: $c0-white;
+          }
+
+          &:hover {
+            color: $c0-white;
+          }
+        }
+      }
+    }
+  }
+}
